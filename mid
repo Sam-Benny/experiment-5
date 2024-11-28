@@ -1,0 +1,22 @@
+//   Substing
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    char str[100];
+    printf("enter the string: ");
+    scanf("%[^\n]",str);
+    printf("enter the position to start extraction: ");
+    scanf("%d",&a);
+    printf("enter the length of substing: ");
+    scanf("%d",&b);
+    int j,i=a-1;
+    for(i;str[i]!='\0' && j<b;i++,j++)
+    {
+        printf("%c",str[i]);
+    }
+    return 0;
+}
+
